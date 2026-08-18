@@ -35,7 +35,8 @@ while True:
                 print("Idade:", aluno["idade"])
                 print("Curso:", aluno["curso"])
                 print("--------------------")
-                    elif opcao == "3":
+                    
+    elif opcao == "3":
         nome_busca = input("Digite o nome do aluno que deseja buscar: ")
 
         encontrado = False
