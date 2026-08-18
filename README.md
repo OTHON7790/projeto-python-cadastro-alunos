@@ -23,6 +23,7 @@ Neste projeto foram praticados conceitos de Python como:
 - remoção de elementos com `remove()`;
 - controle de fluxo com `break`.
 
+
 ## Como executar o projeto
 
 1. Tenha o Python instalado no computador.
@@ -30,10 +31,11 @@ Neste projeto foram praticados conceitos de Python como:
 3. Abra a pasta do projeto no terminal.
 4. Execute o arquivo principal com:
 
-```bash
-python main.py
-Objetivo do projeto
+`python main.py`
+
+## Objetivo do projeto
 
 Este projeto foi criado para praticar conceitos básicos de programação em Python por meio de um sistema simples de cadastro de alunos.
 
 A proposta é transformar conceitos teóricos em prática, desenvolvendo aos poucos novas funcionalidades conforme o avanço dos estudos.
+
