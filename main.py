@@ -56,9 +56,9 @@ while True:
         elif opcao == "4":
         nome_excluir = input("Digite o nome do aluno que deseja excluir: ")
 
-        encontrado = False
+         encontrado = False
 
-        for aluno in alunos:
+         for aluno in alunos:
             if aluno["nome"].lower() == nome_excluir.lower():
                 alunos.remove(aluno)
                 print("Aluno excluído com sucesso!")
