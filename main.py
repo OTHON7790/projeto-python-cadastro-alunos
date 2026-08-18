@@ -24,7 +24,17 @@ while True:
         alunos.append(aluno)
 
         print("Aluno cadastrado com sucesso!")
+    elif opcao == "2":
+        if len(alunos) == 0:
+            print("Nenhum aluno cadastrado.")
+        else:
+            print("\n=== LISTA DE ALUNOS ===")
 
+            for aluno in alunos:
+                print("Nome:", aluno["nome"])
+                print("Idade:", aluno["idade"])
+                print("Curso:", aluno["curso"])
+                print("--------------------")
     elif opcao == "5":
         print("Programa encerrado.")
         break
