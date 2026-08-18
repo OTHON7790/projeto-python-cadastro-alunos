@@ -35,6 +35,23 @@ while True:
                 print("Idade:", aluno["idade"])
                 print("Curso:", aluno["curso"])
                 print("--------------------")
+                    elif opcao == "3":
+        nome_busca = input("Digite o nome do aluno que deseja buscar: ")
+
+        encontrado = False
+
+        for aluno in alunos:
+            if aluno["nome"].lower() == nome_busca.lower():
+                print("\nAluno encontrado:")
+                print("Nome:", aluno["nome"])
+                print("Idade:", aluno["idade"])
+                print("Curso:", aluno["curso"])
+
+                encontrado = True
+                break
+
+        if not encontrado:
+            print("Aluno não encontrado.")
     elif opcao == "5":
         print("Programa encerrado.")
         break
