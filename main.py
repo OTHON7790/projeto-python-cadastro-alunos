@@ -53,6 +53,20 @@ while True:
 
         if not encontrado:
             print("Aluno não encontrado.")
+        elif opcao == "4":
+        nome_excluir = input("Digite o nome do aluno que deseja excluir: ")
+
+        encontrado = False
+
+        for aluno in alunos:
+            if aluno["nome"].lower() == nome_excluir.lower():
+                alunos.remove(aluno)
+                print("Aluno excluído com sucesso!")
+                encontrado = True
+                break
+
+        if not encontrado:
+            print("Aluno não encontrado.")
     elif opcao == "5":
         print("Programa encerrado.")
         break
