@@ -8,9 +8,10 @@ O sistema permite:
 - Excluir aluno;
 - Encerrar o programa;
 - Tratar opções inválidas no menu.
-
+- Salvar os dados dos alunos em arquivo JSON;
+- Manter os dados mesmo após fechar e abrir o programa;
+- 
 ## Conceitos praticados
-
 Neste projeto foram praticados conceitos de Python como:
 
 - listas;
@@ -22,7 +23,7 @@ Neste projeto foram praticados conceitos de Python como:
 - comparação de textos com `lower()`;
 - remoção de elementos com `remove()`;
 - controle de fluxo com `break`.
-
+- leitura e escrita de arquivos JSON;
 
 ## Como executar o projeto
 
