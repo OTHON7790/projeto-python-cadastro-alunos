@@ -1,4 +1,9 @@
-alunos = []
+import json
+try:
+    with open("alunos.json", "r", encoding="utf-8") as arquivo:
+        alunos = json.load(arquivo)
+except FileNotFoundError:
+    alunos = []
 
 while True:
     print("\n=== SISTEMA DE CADASTRO DE ALUNOS ===")
@@ -22,7 +27,8 @@ while True:
         }
 
         alunos.append(aluno)
-
+        with open("alunos.json", "w", encoding="utf-8") as arquivo:
+            json.dump(alunos, arquivo, ensure_ascii=False, indent=4)
         print("Aluno cadastrado com sucesso!")
     elif opcao == "2":
         if len(alunos) == 0:
@@ -61,6 +67,8 @@ while True:
         for aluno in alunos:
             if aluno["nome"].lower() == nome_excluir.lower():
                 alunos.remove(aluno)
+                with open("alunos.json", "w", encoding="utf-8") as arquivo:
+                    json.dump(alunos, arquivo, ensure_ascii=False, indent=4)
                 print("Aluno excluído com sucesso!")
                 encontrado = True
                 break
