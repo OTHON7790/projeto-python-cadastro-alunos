@@ -1,12 +1,14 @@
 import json
 def salvar_alunos(alunos):
-    with open("alunos.json", "w", encoding="utf-8") as arquivo:
+  with open("alunos.json", "w", encoding="utf-8") as arquivo:
         json.dump(alunos, arquivo, ensure_ascii=False, indent=4)
-try:
-    with open("alunos.json", "r", encoding="utf-8") as arquivo:
-        alunos = json.load(arquivo)
-except FileNotFoundError:
-    alunos = []
+def carregar_alunos():
+    try:
+        with open("alunos.json", "r", encoding="utf-8") as arquivo:
+            return json.load(arquivo)
+    except FileNotFoundError:
+        return []
+alunos = carregar_alunos()
 
 while True:
     print("\n=== SISTEMA DE CADASTRO DE ALUNOS ===")
